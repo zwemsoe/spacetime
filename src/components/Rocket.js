@@ -14,6 +14,7 @@ class Rocket extends Component{
         const {styles} = this.state;
         return (
         <div>
+        
         <img className = {styles[this.props.destination]} src = {rocket} alt ="rocket here!"/>
         </div>
         )

@@ -1,23 +1,12 @@
 import React, {Component} from 'react';
-//import {Howl, Howler} from 'howler';
-//import test from "./test.mp3";
-//import wtf from "./WTF.mp3";
 import earth from "./imgs/earth.svg";
 import moon from "./imgs/Moon.svg";
 import mars from "./imgs/mars.svg";
 import exoplanet from "./imgs/exoplanet.svg";
 import Landing from "./components/Landing";
 import Rocket from "./components/Rocket";
-/*
-const clips = [
-  {
-    sound: "https://soundcloud.com/tymedia17/shadow-free-download", label: "test"
-  },
-  {
-    sound: wtf, label: "wtf"
-  }
-]
-*/
+import Music from "./components/Music";
+
 class App extends Component{
   constructor(props){
     super(props);
@@ -94,6 +83,7 @@ class App extends Component{
         if(this.state.readyClicked){
         return (
         <div>
+        <Music/>
         <Rocket destination = {this.state.destination}/>
         <div>
           <img src = {moon} className="moon" alt = "Moon here!"/>
@@ -106,6 +96,7 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
+          <Music/>
           <Rocket destination = {this.state.destination}/>
           <div>
             <img src = {mars} className="mars" alt = "Mars here!"/>
@@ -118,6 +109,7 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
+          <Music/>
           <Rocket destination = {this.state.destination}/>
           <div>
             <img src = {exoplanet} className="exoplanet" alt = "Exoplanet here!"/>
@@ -143,29 +135,7 @@ class App extends Component{
   }
 
 
-  /*
-  playSound = (src) => {
-    const sound = new Howl({
-      src,
-    })
-    sound.play();
-  }
-
-  RenderButton = ()=> {
-    return clips.map((song,index)=>{
-    return (
-    <button onClick={() => this.playSound(song.sound)}>
-          {song.label}
-    </button>
-    )}
-    )
-  }
-
-  render(){
-    Howler.volume(1.0);
-    return <div className="App">Hello, {this.RenderButton()}</div>;
-  }
-  */
+  
 }
 
 export default App;

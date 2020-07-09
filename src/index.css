@@ -5,15 +5,6 @@ body{
   font-family: 'Roboto Mono', monospace;
 }
 
-.earth{
-  position: absolute;
-  left: 0;
-  top: 30%;
-  bottom: 37.79%;
-  width: 12.5em;
-  height: 21.875em;
-}
-
 
 
 /*************** Landing.js *****************/
@@ -57,87 +48,95 @@ body{
 }
 
 
-
-/*************** Rocket.js *****************/
-.rocket{
+/*************** Music.js *****************/
+.music-player{
   position: absolute;
-  width: 7.5em;
-  height:  12.5em;
-  left: 13em;
-  top: 40%;
+  right: 50%;
+  top: 10%;
+}
+
+.playIcon, .pauseIcon, .volumeUpIcon, .volumeDownIcon{
+  color: white;
+}
+
+.playIcon:hover, .pauseIcon:hover, .volumeUpIcon:hover, .volumeDownIcon:hover{
+  color: #FCE205;
+}
+/*************** Rocket.js *****************/
+.rocket, .rocket-to-moon, .rocket-to-mars, .rocket-to-alien{
+  position: absolute;
+  width: 3em;
+  height:  5em;
+  left: 5em;
+  top: 44%;
 }
 
 @keyframes toMoon{
-  from {left:13em;}
-  to {left: 75.2em;}
+  from {left:5em;}
+  to {left: 84em;}
 }
 
 @keyframes toMars{
-  from {left:13em;}
-  to {left: 70em;}
+  from {left:5em;}
+  to {left: 83.5em;}
 }
 
 @keyframes toAlien{
-  from {left:13em;}
-  to {left: 71em;}
+  from {left:5em;}
+  to {left: 81.6em;}
 }
 
 
 .rocket-to-moon{
-  position: absolute;
-  width: 7.5em;
-  height:  12.5em;
   animation-name: toMoon;
-  animation-duration: 5s;
+  animation-duration: 1500s;
   animation-timing-function: linear;
-  top: 40%;
   animation-fill-mode: forwards;
 }
 
 .rocket-to-mars{
-  position: absolute;
-  width: 7.5em;
-  height:  12.5em;
   animation-name: toMars;
-  animation-duration: 5s;
+  animation-duration: 2700s;
   animation-timing-function: linear;
-  top: 40%;
   animation-fill-mode: forwards;
 }
 
 .rocket-to-alien{
-  position: absolute;
-  width: 7.5em;
-  height:  12.5em;
   animation-name: toAlien;
-  animation-duration: 5s;
+  animation-duration: 3600s;
   animation-timing-function: linear;
-  top: 40%;
   animation-fill-mode: forwards;
+}
+
+.earth, .exoplanet{
+  position: absolute;
+  top: 40%;
+  width: 11em;
+  height: 9em;
+}
+
+.earth{
+  left:-3em;
 }
 
 .moon{
   position: absolute;
-  width:7.4375em;
-  height: 7.25em;
-  top:44%;
-  right: 0;
+  width: 4em;
+  height: 4em;
+  top:44.5%;
+  right: -1em;
 }
 
 .mars{
   position: absolute;
-  width: 12.5em;
-  height: 21.875em;
-  top: 30%;
-  right: 0;
+  width: 8em;
+  height: 6em;
+  top: 43%;
+  right: -3.5em;
 }
 
 .exoplanet{
-  position: absolute;
-  right: 0;
-  top: 35%;
-  width: 12.5em;
-  height: 16.875em;
+  right: -3em;
 }
 
 
