@@ -45,7 +45,8 @@ class App extends Component{
 
   goToLanding(){
     this.setState({
-      page:0
+      page:0,
+      destination: 0
     })
   }
 
@@ -66,7 +67,7 @@ class App extends Component{
           <div className = "introPos">
             <h1>Ready?</h1>
             <a onClick = {()=>this.clearScreen()} className ="btn btn-light moonBtn">Yes</a>
-            <a onClick = {()=>this.goToLanding()()} className ="btn btn-light moonBtn">Cancel</a> 
+            <a onClick = {()=>this.goToLanding()} className ="btn btn-light moonBtn">Cancel</a> 
          </div>
           </div>
         );
