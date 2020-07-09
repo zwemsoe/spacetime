@@ -1,19 +1,20 @@
 import React, {Component} from 'react';
-import rocket from "../imgs/Rocket.svg";
+import rocket from "../imgs/fullrocket.svg";
 
 class Rocket extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            x_pos: 3,
-            y_pos: 5
+            styles: ["rocket", "rocket-to-moon", "rocket-to-mars", "rocket-to-alien"]
         }
     }
 
     render(){
+        console.log("reached to rocket");
+        const {styles} = this.state;
         return (
         <div>
-            <img className = "rocket" src = {rocket} alt ="rocket here!"/>
+            <img className = {styles[this.props.destination]} src = {rocket} alt ="rocket here!"/>
         </div>
         )
     }

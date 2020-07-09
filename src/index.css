@@ -35,6 +35,7 @@ body{
 .moonBtn{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
+  color: black !important;
 }
 .moonBtn:hover{
   background-color: #FCE205;
@@ -47,8 +48,22 @@ body{
   position: absolute;
   width: 7.5em;
   height:  12.5em;
-  left: 14em;
-  top: 20em;
+  left: 15em;
+  top: 40%;
 }
 
+@keyframes toMoon{
+  from {left:15em;}
+  to {left: 87em;}
+}
 
+.rocket-to-moon{
+  position: absolute;
+  width: 7.5em;
+  height:  12.5em;
+  left:15em;
+  animation-name: toMoon;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  top: 40%;
+}
