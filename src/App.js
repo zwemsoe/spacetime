@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 //import test from "./test.mp3";
 //import wtf from "./WTF.mp3";
 import earth from "./imgs/earth.svg";
+import moon from "./imgs/Moon.svg";
+import mars from "./imgs/mars.svg";
+import exoplanet from "./imgs/exoplanet.svg";
 import Landing from "./components/Landing";
 import Rocket from "./components/Rocket";
 /*
@@ -64,10 +67,16 @@ class App extends Component{
       case 1:
         return(
           <div>
-          <div className = "introPos">
-            <h1>Ready?</h1>
+          <div className = "readyPos">
+            <h1 className = "readyText">Are you ready?</h1>
+            <div className="row">
+            <div className="col">
             <a onClick = {()=>this.clearScreen()} className ="btn btn-light moonBtn">Yes</a>
+            </div>
+            <div className="col">
             <a onClick = {()=>this.goToLanding()} className ="btn btn-light moonBtn">Cancel</a> 
+            </div>
+            </div>
          </div>
           </div>
         );
@@ -83,13 +92,40 @@ class App extends Component{
         return (<Rocket destination={0}/>);
       case 1:
         if(this.state.readyClicked){
-        return <Rocket destination = {this.state.destination}/>
+        return (
+        <div>
+        <Rocket destination = {this.state.destination}/>
+        <div>
+          <img src = {moon} className="moon" alt = "Moon here!"/>
+        </div>
+        </div>
+        )
         }
         return (<Rocket destination={0}/>);
       case 2:
-        break;
+        if(this.state.readyClicked){
+          return (
+          <div>
+          <Rocket destination = {this.state.destination}/>
+          <div>
+            <img src = {mars} className="mars" alt = "Mars here!"/>
+          </div>
+          </div>
+          )
+          }
+          return (<Rocket destination={0}/>);
       default:
-        break;
+        if(this.state.readyClicked){
+          return (
+          <div>
+          <Rocket destination = {this.state.destination}/>
+          <div>
+            <img src = {exoplanet} className="exoplanet" alt = "Exoplanet here!"/>
+          </div>
+          </div>
+          )
+          }
+          return (<Rocket destination={0}/>);
     }
   }
 
