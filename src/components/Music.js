@@ -55,12 +55,12 @@ constructor(props) {
     <div>
     <div className="row music-player">
     <div className="col">
-    <a className= "play" onClick={()=>{!onPlay && this.playSound()}}>
+    <a href="/#" className= "play" onClick={()=>{!onPlay && this.playSound()}}>
         <i class="fa fa-play-circle fa-4x playIcon" aria-hidden="true"></i>
     </a>
     </div>
     <div className="col">
-    <a className= "pause" onClick={()=>{this.pauseSound()}}>
+    <a href="/#" className= "pause" onClick={()=>{this.pauseSound()}}>
         <i class="fa fa-pause-circle fa-4x pauseIcon" aria-hidden="true"></i>
     </a>
     </div>

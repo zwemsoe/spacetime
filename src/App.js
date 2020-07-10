@@ -61,10 +61,10 @@ class App extends Component{
             <h1 className = "readyText">Are you ready?</h1>
             <div className="row">
             <div className="col">
-            <a onClick = {()=>this.clearScreen()} className ="btn btn-light moonBtn">Yes</a>
+            <a href="/#" onClick = {()=>this.clearScreen()} className ="btn btn-light moonBtn">Yes</a>
             </div>
             <div className="col">
-            <a onClick = {()=>this.goToLanding()} className ="btn btn-light moonBtn">Cancel</a> 
+            <a href="/#" onClick = {()=>this.goToLanding()} className ="btn btn-light moonBtn">Cancel</a> 
             </div>
             </div>
          </div>
