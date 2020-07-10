@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Howl, Howler} from 'howler';
+import {Howl} from 'howler';
 import inag from "../songs/INAG.mp3"
 import tokyo from "../songs/Tokyo.mp3";
 import pearl from "../songs/Pearl.mp3";

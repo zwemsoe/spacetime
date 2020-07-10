@@ -51,8 +51,8 @@ body{
 /*************** Music.js *****************/
 .music-player{
   position: absolute;
-  right: 50%;
-  top: 10%;
+  right: 45%;
+  top: 20%;
 }
 
 .playIcon, .pauseIcon, .volumeUpIcon, .volumeDownIcon{
@@ -89,21 +89,21 @@ body{
 
 .rocket-to-moon{
   animation-name: toMoon;
-  animation-duration: 1500s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
 .rocket-to-mars{
   animation-name: toMars;
-  animation-duration: 2700s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
 .rocket-to-alien{
   animation-name: toAlien;
-  animation-duration: 3600s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -137,6 +137,43 @@ body{
 
 .exoplanet{
   right: -3em;
+}
+
+/****************** Timer.js *************/
+.spaceman{
+  position:absolute;
+  right: 0;
+  top:35%;
+  width: 2em;
+  height: 3em;
+}
+
+.spaceman-for-alien{
+  position:absolute;
+  right: 0;
+  top: 30%;
+  width: 2em;
+  height: 3em;
+}
+
+.progressBar{
+  position: absolute;
+  top: 2%;
+  left: -3em;
+}
+
+.time-remaining{
+  position: absolute;
+  top: 1%;
+  left: 4%;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: white;
+  font-family: Roboto Mono;
+  font-weight: normal;
+  font-size: 2em;
+  background-color: #1b1e21;
+  border-radius: 20px;
 }
 
 

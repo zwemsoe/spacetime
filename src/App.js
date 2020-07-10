@@ -6,6 +6,7 @@ import exoplanet from "./imgs/exoplanet.svg";
 import Landing from "./components/Landing";
 import Rocket from "./components/Rocket";
 import Music from "./components/Music";
+import Timer from "./components/Timer";
 
 class App extends Component{
   constructor(props){
@@ -84,6 +85,7 @@ class App extends Component{
         return (
         <div>
         <Music/>
+        <Timer time={1}/>
         <Rocket destination = {this.state.destination}/>
         <div>
           <img src = {moon} className="moon" alt = "Moon here!"/>
@@ -97,6 +99,7 @@ class App extends Component{
           return (
           <div>
           <Music/>
+          <Timer time={1}/>
           <Rocket destination = {this.state.destination}/>
           <div>
             <img src = {mars} className="mars" alt = "Mars here!"/>
@@ -110,6 +113,7 @@ class App extends Component{
           return (
           <div>
           <Music/>
+          <Timer time={1}/>
           <Rocket destination = {this.state.destination}/>
           <div>
             <img src = {exoplanet} className="exoplanet" alt = "Exoplanet here!"/>
