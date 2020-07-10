@@ -90,18 +90,18 @@ section .star
 section .star.star1
 {
   animation-delay: 0s;
-  background:url(star1.png);
+  background:url(star1.svg);
   
 }
 section .star.star2
 {
   animation-delay: 1s;
-  background:url(star2.png);
+  background:url(star2.svg);
 }
 section .star.star3
 {
   animation-delay: 2s;
-  background:url(star3.png);
+  background:url(star3.svg);
 }
 @keyframes blinkingstars
 {
