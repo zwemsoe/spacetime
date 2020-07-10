@@ -6,6 +6,7 @@ import exoplanet from "./imgs/exoplanet.svg";
 import Landing from "./components/Landing";
 import Rocket from "./components/Rocket";
 import Music from "./components/Music";
+import ProgressBar from "./ProgressBar";
 
 class App extends Component{
   constructor(props){
@@ -51,6 +52,7 @@ class App extends Component{
         <div className = "introPos">
         <Landing setDestination = {this.setDestination}/>
         </div>
+        <ProgressBar key={30} bgcolor={"#ef6c00"} completed={40} />
         </div>
         )
       case 1:
