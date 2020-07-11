@@ -62,28 +62,36 @@ body{
 .playIcon:hover, .pauseIcon:hover, .volumeUpIcon:hover, .volumeDownIcon:hover{
   color: #FCE205;
 }
+
+.spotify{
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
 /*************** Rocket.js *****************/
 .rocket, .rocket-to-moon, .rocket-to-mars, .rocket-to-alien{
   position: absolute;
   width: 3em;
   height:  5em;
-  left: 5em;
+  left: 6%;
   top: 44%;
 }
 
 @keyframes toMoon{
-  from {left:5em;}
-  to {left: 84em;}
+  from {left:6%;}
+  to {left: 93.5%;}
 }
 
 @keyframes toMars{
-  from {left:5em;}
-  to {left: 83.5em;}
+  from {left:6%;}
+  to {left: 92.7%;}
 }
 
 @keyframes toAlien{
-  from {left:5em;}
-  to {left: 81.6em;}
+  from {left:6%;}
+  to {left: 90.7%;}
 }
 
 
@@ -125,6 +133,7 @@ body{
   height: 4em;
   top:44.5%;
   right: -1em;
+  z-index: 1;
 }
 
 .mars{
@@ -133,27 +142,29 @@ body{
   height: 6em;
   top: 43%;
   right: -3.5em;
+  z-index: 1;
 }
 
 .exoplanet{
   right: -3em;
+  z-index: 1;
 }
 
 /****************** Timer.js *************/
+
+@keyframes Landing{
+  from {top:35%;}
+  to {top: 40%;}
+}
+
 .spaceman{
   position:absolute;
   right: 0;
   top:35%;
   width: 2em;
   height: 3em;
-}
-
-.spaceman-for-alien{
-  position:absolute;
-  right: 0;
-  top: 30%;
-  width: 2em;
-  height: 3em;
+  z-index: 2;
+  animation: Landing 2s ease-in-out forwards;
 }
 
 .progressBar{
@@ -174,6 +185,15 @@ body{
   font-size: 2em;
   background-color: #1b1e21;
   border-radius: 20px;
+}
+
+.finishText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 13em;
+  height: 12em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 

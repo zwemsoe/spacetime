@@ -5,7 +5,7 @@ import mars from "./imgs/mars.svg";
 import exoplanet from "./imgs/exoplanet.svg";
 import Landing from "./components/Landing";
 import Rocket from "./components/Rocket";
-import Music from "./components/Music";
+//import Music from "./components/Music";
 import Timer from "./components/Timer";
 
 class App extends Component{
@@ -84,8 +84,7 @@ class App extends Component{
         if(this.state.readyClicked){
         return (
         <div>
-        <Music/>
-        <Timer time={1}/>
+        <Timer time={1} goBack={this.goToLanding}/>
         <Rocket destination = {this.state.destination}/>
         <div>
           <img src = {moon} className="moon" alt = "Moon here!"/>
@@ -98,8 +97,7 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Music/>
-          <Timer time={1}/>
+          <Timer time={1} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
           <div>
             <img src = {mars} className="mars" alt = "Mars here!"/>
@@ -112,8 +110,7 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Music/>
-          <Timer time={1}/>
+          <Timer time={1} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
           <div>
             <img src = {exoplanet} className="exoplanet" alt = "Exoplanet here!"/>
@@ -134,6 +131,7 @@ class App extends Component{
       <img src = {earth} alt = "earth here!" className = "earth"/>
       {this.renderRocket(destination)}
       {this.renderPage(page)}
+      <iframe className="spotify" title="spotify" src="https://open.spotify.com/embed/playlist/1l36DXh7xKLZIhisn5hlur" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
     )
   }
