@@ -67,23 +67,23 @@ body{
   position: absolute;
   width: 3em;
   height:  5em;
-  left: 5em;
+  left: 6%;
   top: 44%;
 }
 
 @keyframes toMoon{
-  from {left:5em;}
-  to {left: 84em;}
+  from {left:6%;}
+  to {left: 93.5%;}
 }
 
 @keyframes toMars{
-  from {left:5em;}
-  to {left: 83.5em;}
+  from {left:6%;}
+  to {left: 92.7%;}
 }
 
 @keyframes toAlien{
-  from {left:5em;}
-  to {left: 81.6em;}
+  from {left:6%;}
+  to {left: 90.7%;}
 }
 
 
@@ -92,6 +92,16 @@ body{
   animation-duration: 60s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+}
+
+@keyframes Flipfire{
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
+#fire{
+  animation: Flipfire 2s linear infinite;
 }
 
 .rocket-to-mars{
@@ -125,6 +135,7 @@ body{
   height: 4em;
   top:44.5%;
   right: -1em;
+  z-index: 1;
 }
 
 .mars{
@@ -133,28 +144,34 @@ body{
   height: 6em;
   top: 43%;
   right: -3.5em;
+  z-index: 1;
 }
 
 .exoplanet{
   right: -3em;
+  z-index: 1;
 }
 
 /****************** Timer.js *************/
+@keyframes Landing{
+  from {top:35%;}
+  to {top: 40%;}
+}
+
+
 .spaceman{
   position:absolute;
   right: 0;
   top:35%;
   width: 2em;
   height: 3em;
+  z-index: 2;
+  animation: Landing 2s ease-in-out forwards !important;
 }
 
-.spaceman-for-alien{
-  position:absolute;
-  right: 0;
-  top: 30%;
-  width: 2em;
-  height: 3em;
-}
+
+
+
 
 .progressBar{
   position: absolute;

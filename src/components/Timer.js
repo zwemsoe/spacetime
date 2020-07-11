@@ -64,7 +64,7 @@ export default class Timer extends Component {
             default:
                 return (
                     <div>
-                        <img src= {spaceman} className="spaceman-for-alien" alt="spaceman here!"/>
+                        <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                     </div>
                     );
         }
