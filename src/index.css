@@ -248,3 +248,14 @@ section .star.star5
     opacity:1;
   }
 }
+
+
+/***********Shooting Stars************/
+/*body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
+  overflow: hidden;
+}*/
