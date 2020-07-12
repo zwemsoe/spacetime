@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 
 body{
-  background: url('./imgs/bg.svg');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
+  overflow: hidden;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -197,7 +202,15 @@ body{
 }
 
 
-
+/****************** DisplayQuotes.js *************/
+.quote-section{
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  width: 50em;
+  height: 9em;
+  background: none !important;
+}
 
 /****************** Blinking Stars *************/
 
