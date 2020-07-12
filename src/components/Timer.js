@@ -46,24 +46,49 @@ export default class Timer extends Component {
             case 25:
                 return (
                 <div>
+                    <div className="card finishText">
+                            <div className="card-body">
+                                <h3>Congrats! Add more here! </h3>
+                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
+                            </div>
+                        </div>
                     <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                 </div>
                 );
             case 45:
                 return (
                 <div>
+                    <div className="card finishText">
+                            <div className="card-body">
+                                <h3>Congrats!</h3>
+                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
+                            </div>
+                        </div>
                     <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                 </div>
                     );
             case 60:
                 return (
                 <div>
+                        <div className="card finishText">
+                            <div className="card-body">
+                                <h3>Congrats!</h3>
+                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
+                            </div>
+                        </div>
                     <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                 </div>
                 );
             default:
                 return (
                     <div>
+                        <div className="card finishText">
+                            <div className="card-body">
+                                <h3>Congrats!</h3>
+                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
+                            </div>
+                        </div>
+
                         <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                     </div>
                     );
