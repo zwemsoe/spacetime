@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 
-body{
-  background: url('./imgs/bg.svg');
+/*body{
+  /*background: url('./imgs/bg.svg');
+  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
   font-family: 'Roboto Mono', monospace;
-}
-
+}*/
 
 
 /*************** Landing.js *****************/
@@ -104,11 +104,11 @@ body{
 
 @keyframes Flipfire{
     100% {
-        transform: rotateX(180deg);
+        transform: rotateY(180deg);
     }
 }
 
-#fire{
+.rocket-to-moon #fire{
   animation: Flipfire 2s linear infinite;
 }
 
@@ -206,18 +206,31 @@ body{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/********SHOOTING STARS************/
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+}
 
 
 
 /****************** Blinking Stars *************/
 
+/*
 section .star
 {
   position: absolute;
   top:0;
   left:0;
+  
   width: 100%;
   height:100%;
+  
   pointer-events:none;
   animation: blinkingstars 8s ease-in-out infinite;
 }
@@ -258,3 +271,4 @@ section .star.star5
     opacity:1;
   }
 }
+*/
