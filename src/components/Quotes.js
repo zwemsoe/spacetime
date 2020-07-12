@@ -113,25 +113,39 @@ const quotes = [
         "Success isn't owned. It's leased, and rent is due every day."
     },
     {
-      id: 190,
+      id: 17,
       emoji: "🔥",
       name: "Bruce Lee",
       quote:
         "Long-term consistency trumps short term intensity"
     },
     {
-      id: 19,
+      id: 18,
       emoji: "👏",
       name: "Zig Ziglar",
       quote: 
         "Your attitude, not your aptitude, will determine your altitude."
     },
     {
-      id: 20,
+      id: 19,
       emoji: "🔥",
       name: "Elon Musk",
       quote:
         "I think it is possible for ordinary people to choose to be extraordinary."
+    },
+    {
+      id: 20,
+      emoji: "📚",
+      name: "Nelson Mandela",
+      quote:
+        "Education is the most powerful weapon which you can use to change the world."
+    },
+    {
+      id: 21,
+      emoji: "📖",
+      name: "William Arthur Ward",
+      quote:
+        "Study while others are sleeping; work while others are loafing; prepare while others are playing; and dream while others are wishing."
     },
     {
       id: 22,
