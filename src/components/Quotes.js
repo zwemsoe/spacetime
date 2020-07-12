@@ -114,17 +114,10 @@ const quotes = [
     },
     {
       id: 17,
-      emoji: "🔝",
+      emoji: "🔥",
       name: "Bruce Lee",
       quote:
         "Long-term consistency trumps short term intensity"
-    },
-    {
-      id: 18,
-      emoji: "😤",
-      name: "Denis Waitley",
-      quote:
-        "There are two primary choices in life: to accept conditions as they exist, or accept the responsibility for changing them."
     },
     {
       id: 19,
@@ -139,13 +132,6 @@ const quotes = [
       name: "Elon Musk",
       quote:
         "I think it is possible for ordinary people to choose to be extraordinary."
-    },
-    {
-      id: 21,
-      emoji: "🤔",
-      name: "Henry Ford",
-      quote:
-        "Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young."
     },
     {
       id: 22,
@@ -174,8 +160,7 @@ const quotes = [
       name: "Eleanor Roosevelt",
       quote:
         "Never allow a person to tell you no who doesn’t have the power to say yes."
-    },
-    
+    }
   ];
   
   export default quotes;
