@@ -113,7 +113,7 @@ const quotes = [
         "Success isn't owned. It's leased, and rent is due every day."
     },
     {
-      id: 100,
+      id: 190,
       emoji: "🔥",
       name: "Bruce Lee",
       quote:
