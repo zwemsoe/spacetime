@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
 
 body{
-  background: url('./imgs/bg.svg');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
+  overflow: hidden;
   font-family: 'Roboto Mono', monospace;
 }
-
 
 
 /*************** Landing.js *****************/
 .introPos{
   position: absolute;
-  left: 39.8125em;
-  top: 15.625em;
+  left: 40%;
+  top: 30%;
   background: none !important;
 }
 
@@ -25,8 +31,8 @@ body{
 
 .readyPos{
   position: absolute;
-  left: 50em;
-  top: 15.625em;
+  left: 40%;
+  top: 30%;
   background: none !important;
 }
 
@@ -102,6 +108,16 @@ body{
   animation-fill-mode: forwards;
 }
 
+@keyframes Flipfire{
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.rocket-to-moon #fire{
+  animation: Flipfire 2s linear infinite;
+}
+
 .rocket-to-mars{
   animation-name: toMars;
   animation-duration: 60s;
@@ -175,39 +191,61 @@ body{
 
 .time-remaining{
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 4%;
   padding-left: 1em;
   padding-right: 1em;
   color: white;
   font-family: Roboto Mono;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: #1b1e21;
   border-radius: 20px;
 }
 
 .finishText{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 13em;
-  height: 12em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 30%;
+  top: 30%;
 }
 
+.margin-top{
+  margin-top: 1em;
+}
 
+/****************** DisplayQuotes.js *************/
+.quote-section{
+  position: absolute;
+  bottom: -1em;
+  left: 3%;
+  width: 50em;
+  height: 9em;
+  background: none !important;
+}
 
+.quote{
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.person-name{
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
 
 /****************** Blinking Stars *************/
 
+/*
 section .star
 {
   position: absolute;
   top:0;
   left:0;
+  
   width: 100%;
   height:100%;
+  
   pointer-events:none;
   animation: blinkingstars 8s ease-in-out infinite;
 }
@@ -248,14 +286,4 @@ section .star.star5
     opacity:1;
   }
 }
-
-
-/***********Shooting Stars************/
-/*body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
-  overflow: hidden;
-}*/
+*/

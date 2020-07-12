@@ -46,23 +46,19 @@ export default class Timer extends Component {
             case 25:
                 return (
                 <div>
-                    <div className="card finishText">
-                            <div className="card-body">
-                                <h3>Congrats! Add more here! </h3>
-                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
-                            </div>
-                        </div>
+                    <div className="finishText">
+                            <h3 className="introText">Congrats! You reached your goal! </h3>
+                            <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn">Start Another</a>
+                    </div>
                     <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                 </div>
                 );
             case 45:
                 return (
                 <div>
-                    <div className="card finishText">
-                            <div className="card-body">
-                                <h3>Congrats!</h3>
-                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
-                            </div>
+                    <div className="finishText">
+                            <h3 className="introText">Congrats! You reached your goal! </h3>
+                            <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn">Start Another</a>
                         </div>
                     <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                 </div>
@@ -70,11 +66,9 @@ export default class Timer extends Component {
             case 60:
                 return (
                 <div>
-                        <div className="card finishText">
-                            <div className="card-body">
-                                <h3>Congrats!</h3>
-                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
-                            </div>
+                        <div className="finishText">
+                            <h3 className="introText">Congrats! You reached your goal! </h3>
+                            <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn">Start Another</a>
                         </div>
                     <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                 </div>
@@ -82,11 +76,9 @@ export default class Timer extends Component {
             default:
                 return (
                     <div>
-                        <div className="card finishText">
-                            <div className="card-body">
-                                <h3>Congrats!</h3>
-                                <a href="/#" onClick={()=>this.props.goBack()} className="card-link">Start over!</a>
-                            </div>
+                        <div className="finishText">
+                            <h3 className="introText">Congrats! You reached your goal! </h3>
+                            <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn margin-top">Start Another</a>
                         </div>
 
                         <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
