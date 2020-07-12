@@ -19,6 +19,13 @@ const quotes = [
       name: "",
       quote:
         ""
+    },
+    {
+        id: 4,
+        emoji: "",
+        name: "",
+        quote:
+          ""
     }
   ];
   
