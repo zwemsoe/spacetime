@@ -121,7 +121,7 @@ const quotes = [
     },
     {
       id: 18,
-      emoji: "👏",
+      emoji: "😤",
       name: "Zig Ziglar",
       quote: 
         "Your attitude, not your aptitude, will determine your altitude."
