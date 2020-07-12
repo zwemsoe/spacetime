@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
 
 body{
   height: 100vh;
@@ -109,13 +108,19 @@ body{
 }
 
 @keyframes Flipfire{
-    100% {
-        transform: rotateY(180deg);
+    from {
+      transform: rotateX(0);
+    }
+    to{
+      transform: rotateX(360deg)
     }
 }
 
-.rocket-to-moon #fire{
-  animation: Flipfire 2s linear infinite;
+.rocket-to-moon #fire, .rocket-to-mars #fire, .rocket-to-alien #fire{
+  animation: Flipfire 2s infinite linear;
+  background-color: white !important;
+  color: white !important;
+  transform-origin: center;
 }
 
 .rocket-to-mars{
@@ -224,13 +229,13 @@ body{
 }
 
 .quote{
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
 .person-name{
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Montserrat', sans-serif;
 }
 
