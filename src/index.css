@@ -102,10 +102,12 @@ body{
 
 
 .rocket-to-moon{
+  z-index:2 ;
   animation-name: toMoon;
   animation-duration: 60s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  
 }
 
 @keyframes Flipfire{
@@ -119,6 +121,7 @@ body{
 }
 
 .rocket-to-mars{
+  z-index:2 ;
   animation-name: toMars;
   animation-duration: 60s;
   animation-timing-function: linear;
@@ -126,6 +129,7 @@ body{
 }
 
 .rocket-to-alien{
+  z-index:2 ;
   animation-name: toAlien;
   animation-duration: 60s;
   animation-timing-function: linear;
@@ -151,6 +155,16 @@ body{
   right: -1em;
   z-index: 1;
 }
+.moon2{
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top:45%;
+  left: -15%;
+  z-index: 1;
+  transform-origin: 600% center;
+  animation: Rotate 60s  infinite;
+}
 
 .mars{
   position: absolute;
@@ -158,6 +172,14 @@ body{
   height: 6em;
   top: 43%;
   right: -3.5em;
+  z-index: 1;
+}
+.mars_for_alien{
+  position: absolute;
+  width: 4em;
+  height: 3em;
+  top: 43%;
+  right: 60%;
   z-index: 1;
 }
 
@@ -287,3 +309,24 @@ section .star.star5
   }
 }
 */
+
+
+.Satellite{
+ 
+  position: absolute;
+  left:-15%;
+  z-index: 1;
+  top:45%;
+  
+  transform-origin: 400% center;
+  /*transform: translate(-50%, -50%);*/
+  
+  animation: Rotate 5s  infinite;
+}
+
+@keyframes Rotate{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to {transform: rotateZ(360deg);}
+}
