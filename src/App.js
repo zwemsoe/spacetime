@@ -7,6 +7,8 @@ import Landing from "./components/Landing";
 import Rocket from "./components/Rocket";
 import Quote from "./components/DisplayQuotes";
 import Timer from "./components/Timer";
+import moon_orbit from "./imgs/Moon_Orbit.svg";
+import satellite from "./imgs/Satellite_Orbit.svg";
 
 
 
@@ -82,7 +84,12 @@ class App extends Component{
   renderRocket(param){
     switch(param){
       case 0:
-        return (<Rocket destination={0}/>);
+        return (
+        <div>
+          <Rocket destination={0}/>
+          <img src = {satellite} className="satellite" alt = "satellite here!"/>
+        </div>
+        );
       case 1:
         if(this.state.readyClicked){
         return (
@@ -91,7 +98,10 @@ class App extends Component{
         <Rocket destination = {this.state.destination}/>
         <Quote id = {Math.floor(Math.random()*23)}/>
         <div>
-          <img src = {moon} className="moon2" alt = "Moon2 here!"/>
+          <img src = {moon} className="moon" alt = "Moon here!"/>
+        </div>
+        <div>
+          <img src = {satellite} className="satellite" alt = "satellite here!"/>
         </div>
         </div>
         )
@@ -108,8 +118,9 @@ class App extends Component{
             <img src = {mars} className="mars" alt = "Mars here!"/>
           </div>
           <div>
-          <img src = {moon} className="moon2" alt = "Moon here!"/>
+          <img src = {moon_orbit} className="moon_orbit" alt = "Moon_orbit here!"/>
           </div>
+          <img src = {satellite} className="satellite" alt = "satellite here!"/>
           </div>
           )
           }
@@ -124,11 +135,12 @@ class App extends Component{
             <img src = {exoplanet} className="exoplanet" alt = "Exoplanet here!"/>
           </div>
           <div>
-          <img src = {moon} className="moon2" alt = "Moon2 here!"/>
+          <img src = {moon_orbit} className="moon_orbit" alt = "Moon_orbit here!"/>
           </div>
           <div>
             <img src = {mars} className="mars_for_alien" alt = "Mars here!"/>
           </div>
+          <img src = {satellite} className="satellite" alt = "satellite here!"/>
           </div>
           )
           }

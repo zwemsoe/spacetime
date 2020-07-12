@@ -160,16 +160,7 @@ body{
   right: -1em;
   z-index: 1;
 }
-.moon2{
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  top:45%;
-  left: -15%;
-  z-index: 1;
-  transform-origin: 600% center;
-  animation: Rotate 60s  infinite;
-}
+
 
 .mars{
   position: absolute;
@@ -177,14 +168,6 @@ body{
   height: 6em;
   top: 43%;
   right: -3.5em;
-  z-index: 1;
-}
-.mars_for_alien{
-  position: absolute;
-  width: 4em;
-  height: 3em;
-  top: 43%;
-  right: 60%;
   z-index: 1;
 }
 
@@ -316,17 +299,31 @@ section .star.star5
 */
 
 
-.Satellite{
+/*****************Orbits****************/
+.satellite{
  
   position: absolute;
-  left:-15%;
+  width: 11.5em;
+  height:11.5em;
+  top:37%;
+  left: -4.8em;
   z-index: 1;
-  top:45%;
+  transform-origin: center;
+  transform-box: fill-box;
   
-  transform-origin: 400% center;
-  /*transform: translate(-50%, -50%);*/
-  
-  animation: Rotate 5s  infinite;
+  animation: Rotate 5s linear infinite;
+}
+
+.moon_orbit{
+  position: absolute;
+  width: 16em;
+  height:16em;
+  top:30%;
+  left: -6.7em;
+  z-index: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: Rotate 10s linear infinite;
 }
 
 @keyframes Rotate{
@@ -334,4 +331,15 @@ section .star.star5
     transform: rotateZ(0deg);
   }
   to {transform: rotateZ(360deg);}
+}
+
+
+
+.mars_for_alien{
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  top: 43%;
+  right: 60%;
+  z-index: 0;
 }
