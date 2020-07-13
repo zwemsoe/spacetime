@@ -98,10 +98,13 @@ export default class Timer extends Component {
                    { console.log(progress)}
                     {(progress <= 100) && (<ProgressBar completed={progress}/>)}
                     <p className = "time-remaining">Time Remaining: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
+                    
                     <div className="Give-Up-Text">
                             <h3 className=""introText> Give Up? </h3>
                             <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn margin-top">Yes</a>
                     </div>
+
+                    
                     </div>
                 }
             </div>

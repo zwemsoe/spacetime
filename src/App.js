@@ -10,8 +10,6 @@ import Timer from "./components/Timer";
 import moon_orbit from "./imgs/Moon_Orbit.svg";
 import satellite from "./imgs/Satellite_Orbit2.svg";
 
-
-
 class App extends Component{
   constructor(props){
     super(props);
