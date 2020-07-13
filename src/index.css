@@ -101,10 +101,12 @@ body{
 
 
 .rocket-to-moon{
+  z-index:2 ;
   animation-name: toMoon;
   animation-duration: 60s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  
 }
 
 @keyframes Flipfire{
@@ -124,6 +126,7 @@ body{
 }
 
 .rocket-to-mars{
+  z-index:2 ;
   animation-name: toMars;
   animation-duration: 60s;
   animation-timing-function: linear;
@@ -131,6 +134,7 @@ body{
 }
 
 .rocket-to-alien{
+  z-index:2 ;
   animation-name: toAlien;
   animation-duration: 60s;
   animation-timing-function: linear;
@@ -156,6 +160,7 @@ body{
   right: -1em;
   z-index: 1;
 }
+
 
 .mars{
   position: absolute;
@@ -292,3 +297,62 @@ section .star.star5
   }
 }
 */
+
+
+/*****************Orbits****************/
+/*.satellite{
+ 
+  position: absolute;
+  width: 11.5em;
+  height:11.5em;
+  top:37%;
+  left: -4.8em;
+  z-index: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+  
+  animation: Rotate 5s linear infinite;
+}*/
+/**trying it out**/
+.satellite{
+ 
+  position: absolute;
+  width: 11.7em;
+  height:11.7em;
+  top:37.5%;
+  left: -5.1em;
+  z-index: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+  
+  animation: Rotate 8s linear infinite;
+}
+.moon_orbit{
+  position: absolute;
+  width: 16em;
+  height:16em;
+  top:33%;
+  left: -6.7em;
+  z-index: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: Rotate 22s linear infinite;
+}
+
+@keyframes Rotate{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to {transform: rotateZ(360deg);}
+}
+
+
+
+.mars_for_alien{
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  top: 43%;
+  right: 60%;
+  z-index: 0;
+}
