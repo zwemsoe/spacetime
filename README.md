@@ -1,5 +1,5 @@
 
-## Inspiration
+### Inspiration
 Pandemic has made students study remotely. Many students who are not used to taking online courses are struggling to keep up with their school work.
 
 ### What it does
