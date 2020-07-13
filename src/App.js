@@ -99,9 +99,9 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Timer time={1} goBack={this.goToLanding}/>
+          <Timer time={5} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
-          <Quote id = {Math.floor(Math.random()*23+1)}/>
+          <Quote id = {Math.floor(Math.random()*23)}/>
           <div>
             <img src = {mars} className="mars" alt = "Mars here!"/>
           </div>
@@ -113,8 +113,9 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Timer time={1} goBack={this.goToLanding}/>
+          <Timer time={10} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
+          <Quote id = {Math.floor(Math.random()*23)}/>
           <div>
             <img src = {exoplanet} className="exoplanet" alt = "Exoplanet here!"/>
           </div>
