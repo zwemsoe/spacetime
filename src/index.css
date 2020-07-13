@@ -317,26 +317,26 @@ section .star.star5
 .satellite{
  
   position: absolute;
-  width: 11.5em;
-  height:11.5em;
+  width: 11.7em;
+  height:11.7em;
   top:37.5%;
   left: -5.1em;
   z-index: 1;
   transform-origin: center;
   transform-box: fill-box;
   
-  animation: Rotate 5s linear infinite;
+  animation: Rotate 8s linear infinite;
 }
 .moon_orbit{
   position: absolute;
   width: 16em;
   height:16em;
-  top:30%;
+  top:33%;
   left: -6.7em;
   z-index: 1;
   transform-origin: center;
   transform-box: fill-box;
-  animation: Rotate 10s linear infinite;
+  animation: Rotate 22s linear infinite;
 }
 
 @keyframes Rotate{
