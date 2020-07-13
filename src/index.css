@@ -10,7 +10,13 @@ body{
   overflow: hidden;
   font-family: 'Roboto Mono', monospace;
 }
-
+/******GIVE UP TEXT*******/
+.Give-Up-Text{
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 60%;
+}
 
 /*************** Landing.js *****************/
 .introPos{
