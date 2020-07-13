@@ -300,7 +300,7 @@ section .star.star5
 
 
 /*****************Orbits****************/
-.satellite{
+/*.satellite{
  
   position: absolute;
   width: 11.5em;
@@ -312,8 +312,21 @@ section .star.star5
   transform-box: fill-box;
   
   animation: Rotate 5s linear infinite;
+}*/
+/**trying it out**/
+.satellite{
+ 
+  position: absolute;
+  width: 11.5em;
+  height:11.5em;
+  top:37.5%;
+  left: -5.1em;
+  z-index: 1;
+  transform-origin: center;
+  transform-box: fill-box;
+  
+  animation: Rotate 5s linear infinite;
 }
-
 .moon_orbit{
   position: absolute;
   width: 16em;

@@ -8,7 +8,7 @@ import Rocket from "./components/Rocket";
 import Quote from "./components/DisplayQuotes";
 import Timer from "./components/Timer";
 import moon_orbit from "./imgs/Moon_Orbit.svg";
-import satellite from "./imgs/Satellite_Orbit.svg";
+import satellite from "./imgs/Satellite_Orbit2.svg";
 
 
 
