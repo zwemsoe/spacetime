@@ -155,6 +155,7 @@ class App extends Component{
     console.log("destination: " + destination);
     return(
     <div>
+      <p className="brand">Spacetime</p>
       <img src = {earth} alt = "earth here!" className = "earth"/>
       {this.renderRocket(destination)}
       {this.renderPage(page)}

@@ -11,6 +11,17 @@ body{
   font-family: 'Roboto Mono', monospace;
 }
 
+.brand{
+  position: absolute;
+  top: 1%;
+  left:1%;
+  color:white;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 5px 5px 5px;
+  border-style: solid;
+  border-spacing: 12px 12px !important;
+}
 
 /*************** Landing.js *****************/
 .introPos{
@@ -128,7 +139,7 @@ body{
 .rocket-to-mars{
   z-index:2 ;
   animation-name: toMars;
-  animation-duration: 60s;
+  animation-duration: 300s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -136,7 +147,7 @@ body{
 .rocket-to-alien{
   z-index:2 ;
   animation-name: toAlien;
-  animation-duration: 60s;
+  animation-duration: 600s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -195,13 +206,13 @@ body{
 
 .progressBar{
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 30%;
 }
 
 .time-remaining{
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 38%;
   padding-left: 1em;
   padding-right: 1em;
@@ -226,7 +237,7 @@ body{
 /****************** DisplayQuotes.js *************/
 .quote-section{
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 23%;
   width: 50em;
   height: 9em;
