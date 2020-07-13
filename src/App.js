@@ -109,9 +109,9 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Timer time={1} goBack={this.goToLanding}/>
+          <Timer time={5} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
-          <Quote id = {Math.floor(Math.random()*23+1)}/>
+          <Quote id = {Math.floor(Math.random()*23)}/>
           <div>
             <img src = {mars} className="mars" alt = "Mars here!"/>
           </div>
@@ -127,8 +127,9 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Timer time={1} goBack={this.goToLanding}/>
+          <Timer time={10} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
+          <Quote id = {Math.floor(Math.random()*23)}/>
           <div>
             <img src = {exoplanet} className="exoplanet" alt = "Exoplanet here!"/>
           </div>
@@ -152,10 +153,11 @@ class App extends Component{
     console.log("destination: " + destination);
     return(
     <div>
+      <p className="brand">SpaceTime</p>
       <img src = {earth} alt = "earth here!" className = "earth"/>
       {this.renderRocket(destination)}
       {this.renderPage(page)}
-      <iframe className="spotify" title="spotify" src="https://open.spotify.com/embed/playlist/1l36DXh7xKLZIhisn5hlur" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe className="spotify" title="spotify" src="https://open.spotify.com/embed/playlist/1l36DXh7xKLZIhisn5hlur" width="300" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
     )
   }

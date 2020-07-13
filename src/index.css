@@ -10,12 +10,17 @@ body{
   overflow: hidden;
   font-family: 'Roboto Mono', monospace;
 }
-/******GIVE UP TEXT*******/
-.Give-Up-Text{
+
+.brand{
   position: absolute;
-  color: white;
-  left: 50%;
-  top: 60%;
+  top: 1%;
+  left:1%;
+  color:white;
+  font-size: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 5px 5px 5px;
+  border-style: solid;
+  border-spacing: 12px 12px !important;
 }
 
 /*************** Landing.js *****************/
@@ -134,7 +139,7 @@ body{
 .rocket-to-mars{
   z-index:2 ;
   animation-name: toMars;
-  animation-duration: 60s;
+  animation-duration: 300s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -142,7 +147,7 @@ body{
 .rocket-to-alien{
   z-index:2 ;
   animation-name: toAlien;
-  animation-duration: 60s;
+  animation-duration: 600s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -201,14 +206,14 @@ body{
 
 .progressBar{
   position: absolute;
-  top: 2%;
-  left: -3em;
+  top: 16%;
+  left: 32%;
 }
 
 .time-remaining{
   position: absolute;
-  top: 2%;
-  left: 4%;
+  top: 16%;
+  left: 42%;
   padding-left: 1em;
   padding-right: 1em;
   color: white;
@@ -229,97 +234,34 @@ body{
   margin-top: 1em;
 }
 
+.giveUpBtn{
+  position: absolute;
+  right: 1%;
+  bottom:1%;
+}
+
 /****************** DisplayQuotes.js *************/
 .quote-section{
   position: absolute;
-  bottom: -1em;
-  left: 3%;
+  bottom: 5%;
+  left: 30%;
   width: 50em;
   height: 9em;
-  background: none !important;
+  text-align: center;
 }
 
 .quote{
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
 .person-name{
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-family: 'Montserrat', sans-serif;
 }
 
-/****************** Blinking Stars *************/
 
-/*
-section .star
-{
-  position: absolute;
-  top:0;
-  left:0;
-  
-  width: 100%;
-  height:100%;
-  
-  pointer-events:none;
-  animation: blinkingstars 8s ease-in-out infinite;
-}
-
-section .star.star1
-{
-  animation-delay: 0s;
-  background:url('./imgs/star1.svg'); 
-}
-section .star.star2
-{
-  animation-delay: 1s;
-  background:url('./imgs/star2.svg');
-}
-section .star.star3
-{
-  animation-delay: 2s;
-  background:url('./imgs/star3.svg');
-}
-section .star.star4
-{
-  animation-delay: 3s;
-  background:url('./imgs/star4.svg'); 
-}
-section .star.star5
-{
-  animation-delay: 4s;
-  background:url('./imgs/star5.svg'); 
-}
-@keyframes blinkingstars
-{
-  0%,20%,40%,60%,80%,100%
-  {
-    opacity:0;
-  }
-  10%,30%,50%,70%,90%
-  {
-    opacity:1;
-  }
-}
-*/
-
-
-/*****************Orbits****************/
-/*.satellite{
- 
-  position: absolute;
-  width: 11.5em;
-  height:11.5em;
-  top:37%;
-  left: -4.8em;
-  z-index: 1;
-  transform-origin: center;
-  transform-box: fill-box;
-  
-  animation: Rotate 5s linear infinite;
-}*/
-/**trying it out**/
 .satellite{
  
   position: absolute;
