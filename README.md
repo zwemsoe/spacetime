@@ -1,4 +1,7 @@
 
+
+Our website: https://space-time.netlify.app/#
+
 ### Inspiration
 Pandemic has made students study remotely. Many students who are not used to taking online courses are struggling to keep up with their school work.
 
@@ -13,8 +16,5 @@ We have a lot more features that we want to add and improve our website.
 
 HTML, CSS, React.js, and Javascript.
 
-### Deployment
-
-https://space-time.netlify.app/#
 
 
