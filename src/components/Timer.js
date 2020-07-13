@@ -41,51 +41,18 @@ export default class Timer extends Component {
     }
 
 
-    renderResults(param){
-        switch(param){
-            case 25:
-                return (
-                <div>
-                    <div className="finishText">
-                            <h3 className="introText">Congrats! You reached your goal! </h3>
-                            <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn">Start Another</a>
-                    </div>
-                    <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
-                </div>
-                );
-            case 45:
-                return (
-                <div>
-                    <div className="finishText">
-                            <h3 className="introText">Congrats! You reached your goal! </h3>
-                            <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn">Start Another</a>
-                        </div>
-                    <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
-                </div>
-                    );
-            case 60:
-                return (
-                <div>
-                        <div className="finishText">
-                            <h3 className="introText">Congrats! You reached your goal! </h3>
-                            <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn">Start Another</a>
-                        </div>
-                    <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
-                </div>
-                );
-            default:
+    renderResults(){
                 return (
                     <div>
                         <div className="finishText">
                             <h3 className="introText">Congrats! You reached your goal! </h3>
                             <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn margin-top">Start Another</a>
                         </div>
-
                         <img src= {spaceman} className="spaceman" alt="spaceman here!"/>
                     </div>
                     );
         }
-    }
+
     render() {
         const { minutes, seconds, progress } = this.state;
         const {time} = this.props;
@@ -98,6 +65,7 @@ export default class Timer extends Component {
                    { console.log(progress)}
                     {(progress <= 100) && (<ProgressBar completed={progress}/>)}
                     <p className = "time-remaining">Time Remaining: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
+                    <a href="/#" onClick={()=>this.props.goBack()} className="btn btn-light moonBtn giveUpBtn">Give Up</a>
                     </div>
                 }
             </div>
