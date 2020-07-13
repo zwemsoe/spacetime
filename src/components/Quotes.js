@@ -114,7 +114,7 @@ const quotes = [
     },
     {
       id: 17,
-      emoji: "🔝",
+      emoji: "🔥",
       name: "Bruce Lee",
       quote:
         "Long-term consistency trumps short term intensity"
@@ -122,30 +122,30 @@ const quotes = [
     {
       id: 18,
       emoji: "😤",
-      name: "Denis Waitley",
-      quote:
-        "There are two primary choices in life: to accept conditions as they exist, or accept the responsibility for changing them."
-    },
-    {
-      id: 19,
-      emoji: "👏",
       name: "Zig Ziglar",
       quote: 
         "Your attitude, not your aptitude, will determine your altitude."
     },
     {
-      id: 20,
+      id: 19,
       emoji: "🔥",
       name: "Elon Musk",
       quote:
         "I think it is possible for ordinary people to choose to be extraordinary."
     },
     {
-      id: 21,
-      emoji: "🤔",
-      name: "Henry Ford",
+      id: 20,
+      emoji: "📚",
+      name: "Nelson Mandela",
       quote:
-        "Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young."
+        "Education is the most powerful weapon which you can use to change the world."
+    },
+    {
+      id: 21,
+      emoji: "📖",
+      name: "William Arthur Ward",
+      quote:
+        "Study while others are sleeping; work while others are loafing; prepare while others are playing; and dream while others are wishing."
     },
     {
       id: 22,
@@ -174,8 +174,7 @@ const quotes = [
       name: "Eleanor Roosevelt",
       quote:
         "Never allow a person to tell you no who doesn’t have the power to say yes."
-    },
-    
+    }
   ];
   
   export default quotes;

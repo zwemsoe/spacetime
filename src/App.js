@@ -39,7 +39,8 @@ class App extends Component{
   goToLanding(){
     this.setState({
       page:0,
-      destination: 0
+      destination: 0,
+      readyClicked : false
     })
   }
 
@@ -86,7 +87,7 @@ class App extends Component{
         <div>
         <Timer time={1} goBack={this.goToLanding}/>
         <Rocket destination = {this.state.destination}/>
-        <Quote id = {Math.floor(Math.random()*25+1)}/>
+        <Quote id = {Math.floor(Math.random()*23)}/>
         <div>
           <img src = {moon} className="moon" alt = "Moon here!"/>
         </div>
@@ -100,7 +101,7 @@ class App extends Component{
           <div>
           <Timer time={1} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
-          <Quote id = {Math.floor(Math.random()*25+1)}/>
+          <Quote id = {Math.floor(Math.random()*23+1)}/>
           <div>
             <img src = {mars} className="mars" alt = "Mars here!"/>
           </div>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
   height: 100vh;
@@ -14,8 +15,8 @@ body{
 /*************** Landing.js *****************/
 .introPos{
   position: absolute;
-  left: 39.8125em;
-  top: 15.625em;
+  left: 40%;
+  top: 30%;
   background: none !important;
 }
 
@@ -29,8 +30,8 @@ body{
 
 .readyPos{
   position: absolute;
-  left: 50em;
-  top: 15.625em;
+  left: 40%;
+  top: 30%;
   background: none !important;
 }
 
@@ -107,13 +108,19 @@ body{
 }
 
 @keyframes Flipfire{
-    100% {
-        transform: rotateY(180deg);
+    from {
+      transform: rotateX(0);
+    }
+    to{
+      transform: rotateX(360deg)
     }
 }
 
-.rocket-to-moon #fire{
-  animation: Flipfire 2s linear infinite;
+.rocket-to-moon #fire, .rocket-to-mars #fire, .rocket-to-alien #fire{
+  animation: Flipfire 2s infinite linear;
+  background-color: white !important;
+  color: white !important;
+  transform-origin: center;
 }
 
 .rocket-to-mars{
@@ -189,46 +196,47 @@ body{
 
 .time-remaining{
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 4%;
   padding-left: 1em;
   padding-right: 1em;
   color: white;
   font-family: Roboto Mono;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: #1b1e21;
   border-radius: 20px;
 }
 
 .finishText{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 13em;
-  height: 12em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 30%;
+  top: 30%;
 }
 
-/********SHOOTING STARS************/
-body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(ellipse at bottom, #0D1E31, #111);
-  overflow: hidden;
-  font-family: 'Roboto Mono', monospace;
+.margin-top{
+  margin-top: 1em;
 }
 
 /****************** DisplayQuotes.js *************/
 .quote-section{
   position: absolute;
-  bottom: 5%;
-  left: 25%;
+  bottom: -1em;
+  left: 3%;
   width: 50em;
   height: 9em;
   background: none !important;
+}
+
+.quote{
+  font-size: 1.1em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.person-name{
+  font-size: 0.9em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /****************** Blinking Stars *************/
