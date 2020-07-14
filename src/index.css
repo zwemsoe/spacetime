@@ -207,13 +207,13 @@ body{
 .progressBar{
   position: absolute;
   top: 16%;
-  left: 32%;
+  left: 30%;
 }
 
 .time-remaining{
   position: absolute;
   top: 16%;
-  left: 42%;
+  left: 37.5%;
   padding-left: 1em;
   padding-right: 1em;
   color: white;
@@ -240,11 +240,26 @@ body{
   bottom:1%;
 }
 
+@media only screen and (min-width:1800px){
+  .time-remaining{
+    top: 16%;
+    left: 42%;
+  }
+  .progressBar{
+    top: 16%;
+    left: 32%;
+  }
+  .quote-section{
+    bottom: 5%;
+    left: 30%;
+  }
+}
+
 /****************** DisplayQuotes.js *************/
 .quote-section{
   position: absolute;
   bottom: 5%;
-  left: 30%;
+  left: 22%;
   width: 50em;
   height: 9em;
   text-align: center;
