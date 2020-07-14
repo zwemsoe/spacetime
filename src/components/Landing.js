@@ -16,13 +16,13 @@ class Landing extends Component{
 
                 <div className= "row button-group">
                     <div className = "col">
-                    <a href="/#" onClick = {() => {this.props.setDestination(1)}} className ="btn btn-light moonBtn">Moon(1min)</a>
+                    <a href="/#" onClick = {() => {this.props.setDestination(1)}} className ="btn btn-light moonBtn">Moon(25min)</a>
                     </div>
                     <div className = "col">
-                    <a href="/#" onClick ={() => {this.props.setDestination(2)}} className ="btn btn-light moonBtn">Mars(5mins)</a>
+                    <a href="/#" onClick ={() => {this.props.setDestination(2)}} className ="btn btn-light moonBtn">Mars(30mins)</a>
                     </div>
                     <div className = "col">
-                    <a href="/#" onClick = {() => {this.props.setDestination(3)}} className ="btn btn-light moonBtn">Alien Base(10mins)</a>
+                    <a href="/#" onClick = {() => {this.props.setDestination(3)}} className ="btn btn-light moonBtn">Alien Base(1hr)</a>
                     </div>
                 </div>
                 </div>

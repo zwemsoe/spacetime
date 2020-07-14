@@ -114,7 +114,7 @@ body{
 .rocket-to-moon{
   z-index:2 ;
   animation-name: toMoon;
-  animation-duration: 60s;
+  animation-duration: 1500s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   
@@ -139,7 +139,7 @@ body{
 .rocket-to-mars{
   z-index:2 ;
   animation-name: toMars;
-  animation-duration: 300s;
+  animation-duration: 2700s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -147,7 +147,7 @@ body{
 .rocket-to-alien{
   z-index:2 ;
   animation-name: toAlien;
-  animation-duration: 600s;
+  animation-duration: 3600s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }

@@ -92,7 +92,7 @@ class App extends Component{
         if(this.state.readyClicked){
         return (
         <div>
-        <Timer time={1} goBack={this.goToLanding}/>
+        <Timer time={25} goBack={this.goToLanding}/>
         <Rocket destination = {this.state.destination}/>
         <Quote id = {Math.floor(Math.random()*23)}/>
         <div>
@@ -109,7 +109,7 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Timer time={5} goBack={this.goToLanding}/>
+          <Timer time={45} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
           <Quote id = {Math.floor(Math.random()*23)}/>
           <div>
@@ -127,7 +127,7 @@ class App extends Component{
         if(this.state.readyClicked){
           return (
           <div>
-          <Timer time={10} goBack={this.goToLanding}/>
+          <Timer time={60} goBack={this.goToLanding}/>
           <Rocket destination = {this.state.destination}/>
           <Quote id = {Math.floor(Math.random()*23)}/>
           <div>
