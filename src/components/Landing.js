@@ -19,7 +19,7 @@ class Landing extends Component{
                     <a href="/#" onClick = {() => {this.props.setDestination(1)}} className ="btn btn-light moonBtn">Moon(25min)</a>
                     </div>
                     <div className = "col">
-                    <a href="/#" onClick ={() => {this.props.setDestination(2)}} className ="btn btn-light moonBtn">Mars(30mins)</a>
+                    <a href="/#" onClick ={() => {this.props.setDestination(2)}} className ="btn btn-light moonBtn">Mars(45mins)</a>
                     </div>
                     <div className = "col">
                     <a href="/#" onClick = {() => {this.props.setDestination(3)}} className ="btn btn-light moonBtn">Alien Base(1hr)</a>
