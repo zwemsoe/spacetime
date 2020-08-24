@@ -157,8 +157,8 @@ class App extends Component{
       <img src = {earth} alt = "earth here!" className = "earth"/>
       {this.renderRocket(destination)}
       {this.renderPage(page)}
-      <iframe className="spotify" title="spotify" src="https://open.spotify.com/embed/playlist/1l36DXh7xKLZIhisn5hlur" width="300" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
+    
+      <iframe className="spotify" src="https://open.spotify.com/embed/playlist/0mBI5RZLjxfv7ZCunuLQdG" width="300" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>    </div>
     )
   }
 
